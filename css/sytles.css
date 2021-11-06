@@ -1,0 +1,62 @@
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 2px #ababab;
+    background-color: #c5cccc81;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+h1{
+    align-self: center ;
+}
+button{
+    font-family: 'Press Start 2P', cursive;
+}
+button::-moz-focus-inner{
+border: none;
+}
+
+#computerScoreDisplay, #playerScoreDisplay, .spacedContent{
+    padding: 10px;
+}
+
+#button-container{
+    align-self: center ;
+    display: flex;
+    flex:auto;
+    justify-content: space-around;
+    background-color: #c5cccc81;
+    border: 5px solid #7F807A;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    align-items: center;
+}
+
+.rps-button, .reset, #randomButton{
+    min-width: 0px;
+    background: none;
+    color: #262626ff;
+    width: 150px; 
+    padding: 10px;
+    border: none;
+}
+.rps-button:hover, .reset:hover,#randomButton:hover{
+    transform: scale(1.08);
+    transition: transform 0.2s linear;
+    background-color: rgba(191, 214, 214, 0.493);
+}
+.output{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+#scoreBoard, #roundWinner, #gameWinner{
+    align-self: center ;
+    display: flex;
+}
+

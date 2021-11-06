@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129.71" height="145.22" version="1.1" viewBox="0 0 129.71 145.22" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <style>.cls-1{fill:#fcf2f0;}.cls-2{fill:none;stroke:#262626;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px;}.cls-3{fill:#262626;}</style>
+ </defs>
+ <title>rock-paper-scissors-line-icons</title>
+ <g id="Icons" transform="translate(-386.12 -274.19)">
+  <g transform="translate(-49.115 7.7916)">
+   <path class="cls-2" d="m479.62 270c-8.1229 0.25963-19.674-2.0701-23.735 7.2326-2.5525 7.3122-0.96432 15.2-1.3655 22.805v89.143"/>
+   <polyline class="cls-2" points="536.06 295.1 536.06 289.25 536.06 288.82"/>
+   <path class="cls-2" d="m479.62 270c23.52 0.0319 47.043-0.0638 70.56 0.0479 8.757 0.70886 13.168 11.806 10.435 18.994-7.9068 0.46476-15.998 0.0843-23.985 0.20811h-0.57086"/>
+   <path class="cls-2" d="m548.62 270c-8.1416-0.65376-12.88 7.9959-12.665 15.202-0.0683 1.2091 0.0829 2.4123 0.10527 3.6178"/>
+   <path class="cls-2" d="m523.52 408c-8.3003 0.62315-13.038-8.3202-12.638-15.653 1.0882-5.6252-6.2303-2.3695-9.604-3.1672h-59.278c-6.128 3.8597-2.7002 12.75 1.944 16.377 4.1883 4.0159 10.075 1.9915 15.224 2.4432 21.97-0.0311 43.945 0.0623 65.913-0.0468 8.3463-0.77116 12.247-10.121 10.979-17.548v-95.305"/>
+  </g>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:title>rock-paper-scissors-line-icons</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+</svg>

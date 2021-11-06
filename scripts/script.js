@@ -1,98 +1,121 @@
+let playerScore = 0;
+let computerScore = 0;
+var tie;
+
+const plScore = document.querySelector('#playerScoreDisplay');
+const cmpScore = document.querySelector('#computerScoreDisplay');
+const roundWinner = document.querySelector('#roundWinner');
+const gameWinner = document.querySelector('#gameWinner');
+const btns = document.querySelectorAll('.rps-button');
+const reset = document.querySelector('.reset');
+const randomButton = document.querySelector('#randomButton');
+const playerChoice = document.querySelector('#playerChoice');
+const computerChoice = document.querySelector('#computerChoice');
+
+
 function computerPlay(){
     // picks a random choice from choices
     let choices = ['rock', 'paper', 'scissors']
     var index = Math.floor(Math.random() * choices.length);
     return choices[index];
-    
-}
-function playerPlay(){
-    let playerSelection = prompt('Kindly input either "Rock", "Paper", or "Scissors".', 'Rock').toLowerCase();
-    return playerSelection
 }
 
-function playerRound(playerSelection, computerSelection){
-    // gets the results and add the scores
+function playRound(playerSelection, computerSelection){
+    // gets input from a button selection and a random selection from the computer\
+    // compares the selection with the random pick
+    console.log(playerSelection);
+    console.log(computerSelection);
+    playerChoice.textContent = playerSelection;
+    computerChoice.textContent = computerSelection;
 
     if(playerSelection == computerSelection){
-    return("It's a TIE")
+        return(tie);
     }
-    else if (playerSelection == 'paper' && computerSelection == 'rock'){
-        return(playerSelection)
-    }
-    else if 
-        (playerSelection == 'rock' && computerSelection == 'scissors'){
-        return(playerSelection)
-
-    }
-    else if 
-        (playerSelection == 'scissors' && computerSelection == 'paper'){
-        return(playerSelection)
-
+    else if (
+        (playerSelection == 'paper' && computerSelection == 'rock') || 
+        (playerSelection == 'rock' && computerSelection == 'scissors') || 
+        (playerSelection == 'scissors' && computerSelection == 'paper')){
+        playerScore++
+        return(playerSelection);
     }
     else {
-        return(computerSelection)
+        computerScore++;
+        return(computerSelection);
+       
+    };
+}
+function disableButtons(){
+    //hides the buttons with the hide class.
+    var elems = document.getElementsByClassName("hide");
+    for(var i = 0; i < elems.length; i++) {
+        elems[i].hidden = true;
     }
 }
-
-
-function updateScores(winner, playerSelection, computerSelection){
-    // let playerScore;
-    // let computerScore;
-    // let tie ;
-    // let winner;
-
-    if (playerSelection == winner && computerSelection != winner){
-        playerScore++;
+function enableButtons(){
+    var elems = document.getElementsByClassName("hide");
+    for(var i = 0; i < elems.length; i++) {
+        elems[i].hidden = false;
     }
-    else if(playerSelection == computerSelection){
-        tie++;
+} 
+
+function updateScores(){
+    if (winner==tie){
+        roundWinner.textContent = `It's a Tie`;
+    }
+    else{roundWinner.textContent = `${winner} wins`;
+    }
+    plScore.textContent = `Player ${playerScore} -`;
+    cmpScore.textContent = ` ${computerScore} Computer`;
+}
+
+function resetScores(){
+    enableButtons();
+    gameWinner.textContent = ''
+    playerScore = 0;
+    computerScore = 0;
+    plScore.textContent = `Player ${playerScore} -`;
+    cmpScore.textContent = ` ${computerScore} Computer`;
+    roundWinner.textContent = `Make a Selection`;
+    playerChoice.textContent = `player choice`;
+    computerChoice.textContent = `computer choice`;
+}
+
+function announceWinner(){
+    if(playerScore === 5){
+        updateScores();
+        roundWinner.textContent = '...';
+        gameWinner.textContent = `Player Wins`;
+        disableButtons();
+    }
+    else if(computerScore === 5){
+        updateScores();
+        roundWinner.textContent = '...';
+        gameWinner.textContent = `Computer Wins`;
+        disableButtons();
     }
     else{
-        computerScore++;
+        updateScores();
     }
-    console.log(`playerscore is ${playerScore}`)
-    console.log(`computer score is ${computerScore}`)
 }
 
+reset.addEventListener('click',resetScores);
 
-function game(gameLimit = 6){
-    gameLimit = 6;
-    let playerScore = 0;
-    let computerScore = 0;
-    let tie = 0;
-    let winner;
+randomButton.addEventListener('click', ()=> {
+    // a button for a random selection 
+    computerSelection = computerPlay();
+    playerSelection = computerPlay();
 
-    for (let round = 1; round < gameLimit; round++){
-        console.log(`Round: ${round}`)
+    winner = playRound(playerSelection, computerSelection);
+    announceWinner();
+})   
 
-        const playerSelection = playerPlay()
-        const computerSelection = computerPlay()
+btns.forEach((button)=>{
+    button.addEventListener('click', () =>{
+    //add a click event listener to the buttons except the random button
+    let computerSelection = computerPlay();
+    let playerSelection = button.textContent.trim().toLocaleLowerCase();
 
-        console.log(`player selection is ${playerSelection}`)
-        console.log(`computer selection is ${computerSelection}`)
-        
-        winner = playerRound(playerSelection, computerSelection)
-
-        if (playerSelection == winner && computerSelection != winner){
-            console.log('Player Wins')
-            playerScore++;
-        }
-        else if(playerSelection == computerSelection){
-            console.log('Its a Tie')
-            tie++;
-        }
-        else{
-            console.log('Commputer Wins')
-            computerScore++;
-        }
-        // updateScores(winner, playerSelection, computerSelection)
-
-            console.log(`playerscore is ${playerScore}`)
-            console.log(`computer score is ${computerScore}`) 
-        }
-
-
-}
-
-   
-game()
+    winner = playRound(playerSelection, computerSelection);
+    announceWinner();
+    })   
+});

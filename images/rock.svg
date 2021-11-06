@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1.0661in" height="1.5729in" version="1.1" viewBox="0 0 102.35 151" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <style>.cls-1{fill:#fcf2f0;}.cls-2{fill:none;stroke:#262626;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px;}.cls-3{fill:#262626;}</style>
+ </defs>
+ <title>rock-paper-scissors-line-icons</title>
+ <g id="Icons" transform="translate(-392.53 -244)">
+  <g transform="translate(226.16 -19.495)" fill="#9aebe9" fill-opacity=".84961" stroke="#262626">
+   <g transform="translate(.28715 -.44275)" fill-opacity="0">
+    <g stroke="#262626">
+     <path class="cls-2" d="m265.4 323.06v48c0.81419 23.472-21.692 41.365-44.044 39.3-10.752-0.0851-22.064 0.95102-31.656-5.2652-14.4-7.6368-20.469-24.052-19.65-39.508v-41.917"/>
+     <path class="cls-2" d="m170.05 323.67v-45.42c-0.57667-16.446 25.473-14.59 23.83 0.72977v44.69"/>
+     <path class="cls-2" d="m241.56 323.7v-45.42c-0.57851-16.564 25.488-14.6 23.84 0.72977v44.69"/>
+     <path class="cls-2" d="m193.81 335.7v-22.22c-0.42795-17.148 26.274-14.161 23.84 1.4596v4.6604"/>
+     <path class="cls-2" d="m217.72 337.64v-23.92c-0.4337-17.013 26.274-14.172 23.84 1.4596v27.54c0.33988 9.3119-11.111 15.269-18.58 9.92"/>
+     <path class="cls-2" d="m170.05 349.94c-0.34811-10.798 10.547-14.867 19.473-14 7.979 0.0866 15.972-0.18035 23.941 0.14675 14.149 1.4651 12.345 24.467-1.8647 23.693h-18.55"/>
+     <path class="cls-2" d="m206.77 359.78c8.5984-0.29262 13.974 8.34 12.89 16.174v5.086"/>
+    </g>
+    <rect x="310.14" y="220.43" width="29.614" height="47.524" rx="20" stroke="#5f1f1f" stroke-opacity=".0014559"/>
+   </g>
+  </g>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:title>rock-paper-scissors-line-icons</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+</svg>

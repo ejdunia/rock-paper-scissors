@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124.82" height="151" version="1.1" viewBox="0 0 124.82 151" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <style>.cls-1{fill:#fcf2f0;}.cls-2{fill:none;stroke:#262626;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px;}.cls-3{fill:#262626;}</style>
+ </defs>
+ <title>rock-paper-scissors-line-icons</title>
+ <g id="Icons" transform="translate(-720.05 -263.5)">
+  <line class="cls-2" x1="784.28" x2="795.55" y1="365.18" y2="378.27"/>
+  <path class="cls-2" d="m782.46 327.54c-15.793-20.18-31.587-40.36-47.38-60.54-8.9956 15.97-5.4107 37.538 7.8286 50.097 8.1605 9.4844 16.321 18.969 24.481 28.453"/>
+  <line class="cls-2" x1="811.91" x2="798.82" y1="365.18" y2="348.45"/>
+  <path class="cls-2" d="m754.64 365.18c25.61-32.727 51.22-65.453 76.83-98.18 8.9495 15.9 5.4483 37.324-7.6297 49.923-18.157 21.542-36.314 43.084-54.47 64.627"/>
+  <circle class="cls-2" cx="746.46" cy="388.09" r="22.91"/>
+  <circle class="cls-2" cx="746.46" cy="388.09" r="9.82"/>
+  <circle class="cls-2" cx="818.46" cy="388.09" r="22.91"/>
+  <circle class="cls-2" cx="818.46" cy="388.09" r="9.82"/>
+  <path d="m787.82 347.96a4.6489 4.5816 0 0 1-4.6408 4.5816 4.6489 4.5816 0 0 1-4.657-4.5656 4.6489 4.5816 0 0 1 4.6245-4.5975 4.6489 4.5816 0 0 1 4.6731 4.5495" fill="#262626" stroke-width="66.009"/>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:title>rock-paper-scissors-line-icons</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+</svg>
