@@ -1,6 +1,5 @@
-
-body{
-    font-family: 'Press Start 2P', cursive;
+body {
+    font-family: "Press Start 2P", cursive;
     text-shadow: 2px 2px 2px #ababab;
     background-color: #c5cccc81;
     color: #262626;
@@ -8,55 +7,82 @@ body{
     flex-direction: column;
     height: 100%;
 }
-h1{
-    align-self: center ;
-}
-button{
-    font-family: 'Press Start 2P', cursive;
-}
-button::-moz-focus-inner{
-border: none;
+a {
+    text-decoration: none;
+    color: #262626;
 }
 
-#computerScoreDisplay, #playerScoreDisplay, .spacedContent{
-    padding: 10px;
+h1 {
+    align-self: center;
 }
 
-#button-container{
-    align-self: center ;
-    display: flex;
-    flex:auto;
-    justify-content: space-around;
-    background-color: #c5cccc81;
-    border: 5px solid #7F807A;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    align-items: center;
+button {
+    font-family: "Press Start 2P", cursive;
 }
 
-.rps-button, .reset, #randomButton{
-    min-width: 0px;
-    background: none;
-    color: #262626ff;
-    width: 150px; 
-    padding: 10px;
+button::-moz-focus-inner {
     border: none;
 }
-.rps-button:hover, .reset:hover,#randomButton:hover{
-    transform: scale(1.08);
-    transition: transform 0.2s linear;
-    background-color: rgba(191, 214, 214, 0.493);
+
+#computerScoreDisplay,
+#playerScoreDisplay,
+.spacedContent {
+    padding: 15px;
 }
-.output{
+
+#button-container {
+    align-self: center;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    background-color: #c5cccc81;
+    border: 5px solid #7f807a;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    height: auto;
+    gap: 20px;
+}
+.attribute {
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    font-size: small;
+}
+.rps-button,
+.reset,
+#randomButton {
+    /* display: flex; */
+    /* adding the display: flex messes up the 
+     disableButtons function in JS */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: #262626;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.rps-button:hover,
+.reset:hover,
+#randomButton:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s linear;
+    background-color: rgba(191, 214, 214, 0.493);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.output {
     display: flex;
     flex-direction: row;
     align-self: center;
 }
 
-#scoreBoard, #roundWinner, #gameWinner{
-    align-self: center ;
+#scoreBoard,
+#roundWinner,
+#gameWinner {
+    align-self: center;
     display: flex;
+    justify-content: center;
 }
-
